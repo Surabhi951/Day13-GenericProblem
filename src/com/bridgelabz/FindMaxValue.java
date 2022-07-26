@@ -20,6 +20,15 @@ public class FindMaxValue {
         if (z.compareTo(max) > 0)
             max = z;
         return max;
+    }
+    public static String testMaximum( String  x,  String  y,  String  z) {
+        String  max = x;
+        if (y.compareTo(max) > 0)
+            max = y;
+
+        if (z.compareTo(max) > 0)
+            max = z;
+        return max;
 
     }
 
@@ -27,5 +36,6 @@ public class FindMaxValue {
         System.out.println("Welcome to test maximum of three numbers");
         System.out.println("The maximum of integer is: " +testMaximum(30,20,15));
         System.out.println("The maximum of float is: " +testMaximum(4.9f, 1.7f, 9.6f));
+        System.out.println("The maximum of string is: " +testMaximum("Apple", "Peach", "Banana"));
     }
 }
