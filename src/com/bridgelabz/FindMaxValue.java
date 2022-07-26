@@ -1,13 +1,6 @@
 package com.bridgelabz;
 
 public class FindMaxValue {
-    int x, y, z;
-
-    public FindMaxValue(int x, int y, int z) {
-        this.x = x;
-        this.y = y;
-        this.z = z;
-    }
 
     public static Integer testMaximum(Integer x, Integer y, Integer z) {
         Integer max = x;
@@ -16,11 +9,13 @@ public class FindMaxValue {
 
         if (z.compareTo(max) > 0)
             max = z;
-        printMax(x, y, z, max);
-        return max;
+       return max;
 
     }
-    public static void printMax(Integer x, Integer y, Integer z, Integer max) {
-        System.out.printf("the max %s \n", max);
+
+    public static void main(String[] args) {
+        System.out.println("Welcome to test maximum of three numbers");
+        System.out.println("The maximum of integer is: " +testMaximum(10,20,15));
+
     }
 }
