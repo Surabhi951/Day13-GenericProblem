@@ -2,35 +2,14 @@ package com.bridgelabz;
 
 public class FindMaxValue {
 
-    public static Integer testMaximum(Integer x, Integer y, Integer z) {
-        Integer max = x;
-        if (y.compareTo(max) > 0)
-            max = y;
-
-        if (z.compareTo(max) > 0)
-            max = z;
+    public static <E extends Comparable<E>> E testMaximum(E a1, E a2, E a3) {
+        E max = a1;
+        if (a2.compareTo(max) > 0)
+            max = a2;
+        if (a3.compareTo(max) > 0)
+            max = a3;
         return max;
- }
-
-    public static Float testMaximum(Float x, Float y, Float z) {
-        Float max = x;
-        if (y.compareTo(max) > 0)
-            max = y;
-
-        if (z.compareTo(max) > 0)
-            max = z;
-        return max;
-}
-
-    public static String testMaximum( String  x,  String  y,  String  z) {
-        String  max = x;
-        if (y.compareTo(max) > 0)
-            max = y;
-
-        if (z.compareTo(max) > 0)
-            max = z;
-        return max;
- }
+    }
 
     public static void main(String[] args) {
         System.out.println("Welcome to test maximum of three numbers");
