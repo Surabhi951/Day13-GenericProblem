@@ -1,6 +1,12 @@
 package com.bridgelabz;
 
-public class FindMaxValue {
+public class FindMaxValue<E extends Comparable<E>>{
+    E a1 , a2, a3;
+    public FindMaxValue(E a1, E a2, E a3) {
+        this.a1 = a1;
+        this.a2 = a2;
+        this.a3 = a3;
+    }
     public static <E extends Comparable<E>> E testMaximum(E a1, E a2, E a3) {
         E max = a1;
         if (a2.compareTo(max) > 0)
@@ -14,5 +20,6 @@ public class FindMaxValue {
         System.out.println("The maximum of integer is: " +testMaximum(30,20,15));
         System.out.println("The maximum of float is: " +testMaximum(4.9f, 1.7f, 9.6f));
         System.out.println("The maximum of string is: " +testMaximum("Apple", "Peach", "Banana"));
+
     }
 }
