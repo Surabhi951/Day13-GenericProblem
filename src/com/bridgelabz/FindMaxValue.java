@@ -1,8 +1,10 @@
 package com.bridgelabz;
 
 public class FindMaxValue<E extends Comparable<E>>{
-    void testMaximum(E a1, E a2, E a3,  E a4, E a5) {
-        E max = a1;
+
+ void testMaximum(E a1, E a2, E a3,  E a4, E a5) {
+
+         E max = a1;
         if (a2.compareTo(max) > 0)
             max = a2;
         if (a3.compareTo(max) > 0)
@@ -17,6 +19,7 @@ public class FindMaxValue<E extends Comparable<E>>{
      void printMax(E max){
         System.out.println("maximum value is "+max);
     }
+
     public static void main(String[] args) {
 
         System.out.println("Welcome to test maximum of three numbers");
